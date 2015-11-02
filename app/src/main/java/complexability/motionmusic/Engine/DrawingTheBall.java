@@ -39,21 +39,19 @@ public class DrawingTheBall extends View {
         black.setStyle(Paint.Style.FILL);
         //Draw the rectangle with paint attribute
         canvas.drawRect(grid, black);
-        if( x < canvas.getWidth()) {
+        if (x < canvas.getWidth()) {
             x += 10;
-        }
-        else {
+        } else {
             x = 0;
         }
-        if (y  < canvas.getHeight()) {
+        if (y < canvas.getHeight()) {
             y += 10;
-        }
-        else{
+        } else {
             y = 10;
         }
         canvas.drawBitmap(aimBall, x, y, new Paint());
         invalidate();
     }
-
-
 }
+
+
