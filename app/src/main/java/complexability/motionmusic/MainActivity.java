@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void launchGame(View view) {
-        Log.d("click", "launch Game");
+        Log.d("MainActivity", "launch Game");
         Intent intent = new Intent(this, GameActivity.class);
         startActivity(intent);
     }
